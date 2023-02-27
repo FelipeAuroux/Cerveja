@@ -10,25 +10,29 @@
         android:id="@+id/pesquisa"
         android:layout_width="196dp"
         android:layout_height="59dp"
+        android:onClick="onClickBuscar"
         android:text="Pesquisar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_tipagem"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <Spinner
         android:id="@+id/spinner_tipagem"
         android:layout_width="285dp"
         android:layout_height="50dp"
+        android:contentDescription="Selecione o tipo"
+        android:hint="Selecione o tipo"
+        android:scrollbarSize="10dp"
+        android:textSize="20sp"
+        app:guidelineUseRtl="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123"
-        android:contentDescription="Selecione o tipo"
-        android:hint="Selecione o tipo"/>
+        app:layout_constraintVertical_bias="0.123" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -40,5 +44,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pesquisa"
         app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o tipo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_tipagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

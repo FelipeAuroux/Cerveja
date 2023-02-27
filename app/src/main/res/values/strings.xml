@@ -1,13 +1,12 @@
 <resources>
     <string name="app_name">Consultor de Cerveja - Felipe R Rezende</string>
     <string-array name="tiposCerveja">
-        <item>Selecione o tipo de cerveja</item>
+        <item>------</item>
         <item>Pilsen</item>
         <item>Bock</item>
         <item>Witbier</item>
         <item>Weissbier</item>
         <item>American IPA</item>
-        <item>Juicy / Hazy IPA</item>
         <item>Stout</item>
         </string-array>
 
